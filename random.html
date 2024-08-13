@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head><title>docu</title>
+      <style>
+         .button{
+          border-width: 80px;
+          border-top: 40px;
+          border-radius: 6px;
+          border-color: blue;
+         padding-top: 20px;
+         }
+         .p{
+          text-align: center;
+         }
+         .but{
+          padding-top: 10px;
+          margin-top: 60px;
+          text-align: center;
+         }
+         .total{
+          display: block;
+          height: 700px;
+          width: 1500px;
+          background-color: aquamarine;
+          padding-top: 100px;
+         }
+      </style>
+<script>
+  function game(user){
+    let a=Math.floor(Math.random()*10)+1;
+    let comp=a%3;
+    if(comp==0 && user==2)
+    {
+      let c=alert("You Click Scissors ,Computer Touched Stone , You Lose ! Better Luck Next Time");
+    }
+    else if(comp==0 && user==1)
+    {
+      let c=alert("You Click Paper, Computer Touched Stone , You WiN !... Have a Smile");
+    }
+    else if(comp==0 && user==0)
+    {
+      let c=alert("You Click Stone Computer Touched Stone , Match tie Heavy Competition !")
+    }
+    else if(comp==2 && user==2)
+    {
+      let c=alert("You Click Scissors ,Computer Touched Paper , YOU WiN !... Have a Smile")
+    }
+    else if(comp==2 && user==1)
+    {
+      let c=alert("You Click Paper, Computer Touched Paper , Match tie Heavy Competition !")
+    }
+    else if(comp==2 && user==0)
+    {
+      let c=alert("You Click Stone ,Computer Touched Paper, You Lose ! Better Luck Next Time")
+    }
+    else if(comp==1 && user==2)
+    {
+      let c=alert("You Click Scissors ,Computer Touched Scissors , Match tie Heavy Competition !")
+    }
+    else if(comp==1 && user==1)
+    {
+      let c=alert("You Click Paper,Computer Touched Scissors ,You Lose ! Better Luck Next Time")
+    }
+    else if(comp==1 && user==0)
+    {
+      let c=alert("You Click Stone ,Computer Touched Scissors, You WiN !... Have a Smile")
+    }
+  }
+ </script>
+</head>
+<body>
+  <div class="total">
+  <h1 class="p">STONE PAPER SCISSOR GAME</h1>
+  <div class="but">
+<button class="button" onclick="game(0)">Rock</button>
+<button class="button"onclick="game(1)">paper</button>
+<button class="button"onclick="game(2)">scissors</button>
+</div></div>
+</body></html>
